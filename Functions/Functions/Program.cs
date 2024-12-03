@@ -1,4 +1,6 @@
-﻿namespace Functions
+﻿using System.Runtime.InteropServices;
+
+namespace Functions
 {
     internal class Program
     {
@@ -12,6 +14,21 @@
         internal void Run()
         {
             Console.WriteLine("Dit is nu de start van mijn programma");
+            vraag();
+
         }
+        internal void vraag()
+        {
+            Console.WriteLine("How long do you think you would survive in a zombie apocalypse?");
+            string antwoord = Console.ReadLine();
+
+            Console.WriteLine(antwoord);
+
+
+
+
+        }
+        
+
     }
 }
